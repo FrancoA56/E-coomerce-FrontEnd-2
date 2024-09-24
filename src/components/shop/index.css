@@ -1,0 +1,106 @@
+/* Estilos para los checkboxes */
+.custom-checkbox input:checked + .checkbox-custom {
+  background-color: #F2BDBD; /* Color cuando está seleccionado */
+  border-color: #404040;
+}
+
+.custom-checkbox .checkbox-custom {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #736668;
+  border-radius: 4px;
+  background-color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-checkbox input:focus + .checkbox-custom {
+  outline: 2px solid #F2BDBD; /* Enfocado */
+}
+
+/* Estilos para los radios de categoría */
+.custom-radio input:checked + .radio-custom {
+  background-color: #F2BDBD; /* Color cuando está seleccionado */
+  border-color: #404040;
+}
+
+.custom-radio .radio-custom {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #736668;
+  border-radius: 50%; /* Redondear los radios */
+  background-color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-radio input:focus + .radio-custom {
+  outline: 2px solid #F2BDBD; /* Enfocado */
+}
+
+/* Estilos para la barra de rango de precios */
+
+/* Personaliza la pista (track) de la barra */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #F2BDBD; /* Color rosita */
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+input[type="range"]:hover {
+  background-color: #404040; /* Color rosita más oscuro en hover */
+}
+
+/* Personaliza el pulgar (thumb) de la barra */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #F2BDBD; /* Color rosita */
+  border: 2px solid #736668; /* Borde */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  background-color: #404040; /* Cambia el color del pulgar en hover */
+  border-color: #404040; /* Cambia el color del borde en hover */
+}
+
+/* Estilos para Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #F2BDBD; /* Color rosita */
+  border: 2px solid #736668;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+  background-color: #404040; /* Cambia el color del pulgar en hover */
+  border-color: #404040;
+}
+
+/* Para mejorar el aspecto en Internet Explorer */
+input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #F2BDBD;
+  border: 2px solid #736668;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]:hover::-ms-thumb {
+  background-color: #404040; /* Cambia el color del pulgar en hover */
+  border-color: #404040;
+}

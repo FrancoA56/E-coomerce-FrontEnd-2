@@ -1,0 +1,7 @@
+.sticky {
+    position: -webkit-sticky; /* Para Safari */
+    position: sticky;
+    top: 0;
+    z-index: 50; /* Asegúrate de que esté por encima del contenido */
+  }
+  
